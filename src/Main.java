@@ -15,6 +15,7 @@ public class Main extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(960, 590));
         setResizable(false);
+        setTitle("DayZ BS-LogReader Version: -1");
 
 
         textArea = new JTextArea();
