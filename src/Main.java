@@ -64,10 +64,10 @@ public class Main extends JFrame {
                 System.exit(-1);
             }
             String logpath = config_reader.readLine();
-            if(Paths.get(logpath).toAbsolutePath().toString().endsWith("script.log")) {
+            if(Paths.get(logpath).toAbsolutePath().toString().endsWith(".log") || Paths.get(logpath).toAbsolutePath().toString().endsWith(".txt")) {
                 reader = new BufferedReader(new FileReader(logpath));
             }else{
-                JOptionPane.showMessageDialog(null, "Invalid script.log path, please check config.txt");
+                JOptionPane.showMessageDialog(null, "Invalid script.log path, please check config.txt. File type must be txt, or log.");
                 System.exit(-1);
             }
 
